@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejemplo de GIT</title>
+	<script>
+		function welcome_msj(){
+			queryString = window.location.search;
+			parameters = new URLSearchParams(queryString);
+			value = parameters.get('user');
+			document.getElementById("welcome").innerHTML = "Bienvenido(a) "+value+" al demo de Git";
+		}	
+	</script>
+	</head>
+	<body onload="welcome_msj()">
+		<h3 id ="welcome" style="color=blue"></h3>
+		<p>Esto es un demo de GIT muy sencillo</p>
+	</body>
+</html>

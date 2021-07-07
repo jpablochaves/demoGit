@@ -1,10 +1,24 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="funciones.js"></script>
 		<title>Ejemplo de GIT</title>
 	</head>	
-	<body>
+	<body onload="get_redirect()">
 		<h3>Demo de GIT</h3>
 		<p>Esto es un demo de GIT muy sencillo</p>
+		<div class="container">
+			<form method="post">          		   
+            			<label>Nombre de usuario : </label>   
+           			<input type="text" placeholder="Usuario" name="username" id="username" required>  
+            			<label>Contraseña : </label>   
+            			<input type="password" placeholder="Contraseña" name="password" id="password" required>  
+            			<label id="msj_error"></label>
+				<button type="button" onclick="login_user()">Ingresar</button>  
+            			Olvid&oacute; su <a href="#"> contraseña? </a>           		  
+    			</form>   
+		</div>   
 	</body>
 </html>
